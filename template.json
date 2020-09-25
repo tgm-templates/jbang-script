@@ -1,5 +1,5 @@
 {
-  "name": "jbang script",
+  "name": "jbang-script",
   "repository": "https://github.com/tgm-templates/jbang-script",
   "description": "App template to write jbang script",
   "variables": [
