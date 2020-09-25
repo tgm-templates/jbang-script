@@ -29,12 +29,12 @@ java {
 sourceSets {
   main {
     java {
-      srcDir("src/main/java")
+      srcDirs = ['src/main/java']
     }
   }
   hello {
     java {
-      srcDir("src/jbang/hello")
+      srcDirs = ['src/jbang/hello']
     }
   }
 }
