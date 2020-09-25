@@ -21,6 +21,11 @@ dependencies {
   helloAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 }
 
+java {
+  sourceCompatibility = JavaVersion.VERSION_1_8
+  targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 sourceSets {
   main {
     java {
