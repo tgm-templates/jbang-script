@@ -13,7 +13,7 @@ $ jbang init --template=cli Hello.java
 * jbang-catalog.json for command alias
 * Command with Spring Boot support: create SpringBootApp.java under 'src/script/jbang/demo1' with package specified.
 
-```
+```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 //DEPS org.springframework.boot:spring-boot-starter:2.3.4.RELEASE
 package demo1;
