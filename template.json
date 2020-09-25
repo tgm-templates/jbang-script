@@ -1,0 +1,18 @@
+{
+  "name": "jbang script",
+  "repository": "https://github.com/tgm-templates/jbang-script",
+  "description": "App template to write jbang script",
+  "variables": [
+    {
+      "name": "groupId",
+      "description": "Maven groupId"
+    },
+    {
+      "name": "artifactId",
+      "description": "Maven artifactId"
+    }
+  ],
+  "files": [
+    "pom.xml"
+  ]
+}
