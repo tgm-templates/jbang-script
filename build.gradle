@@ -1,5 +1,10 @@
 apply plugin: 'java'
 
+java {
+  sourceCompatibility = JavaVersion.VERSION_1_8
+  targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 repositories {
   mavenLocal()
   jcenter()
@@ -19,11 +24,6 @@ dependencies {
   helloImplementation "org.slf4j:slf4j-simple:1.7.30"
   helloImplementation "org.projectlombok:lombok:1.18.12"
   helloAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-}
-
-java {
-  sourceCompatibility = JavaVersion.VERSION_1_8
-  targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 sourceSets {
