@@ -3,7 +3,7 @@ jbang script
 
 # Tips
 
-* generate picocli command
+* Generate Picocli command
 
 ```
 $ cd src/script/jbang
