@@ -1,4 +1,5 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
+//DEPS io.github.cdimascio:dotenv-java:2.2.0
 //DEPS org.slf4j:slf4j-simple:1.7.30
 //DEPS org.projectlombok:lombok:1.18.12
 
