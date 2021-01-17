@@ -15,7 +15,7 @@ $ jbang init --template=cli Hello.java
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.springframework.boot:spring-boot-starter:2.3.4.RELEASE
+//DEPS org.springframework.boot:spring-boot-starter:2.4.2
 package demo1;
 
 import org.springframework.boot.CommandLineRunner;
