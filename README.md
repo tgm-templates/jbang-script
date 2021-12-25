@@ -1,41 +1,26 @@
-jbang script
+jbang app
 ============
 
-# Tips
+# Features
 
-* Generate Picocli command
+* jbang-catalog.json
+* Gradle Source Set for JBang script
+
+# How to create JBang script
+
+* Create source set for new JBang script: `mkdir src/second`
+* Add source in build.gradle
 
 ```
-$ cd src/script/jbang
-$ jbang init --template=cli Hello.java
-```
-
-* jbang-catalog.json for command alias
-* Command with Spring Boot support: create SpringBootApp.java under 'src/script/jbang/demo1' with package specified.
-
-```java
-///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.springframework.boot:spring-boot-dependencies:2.4.2@pom
-//DEPS org.springframework.boot:spring-boot-starter
-package demo1;
-
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class SpringBootApp implements CommandLineRunner {
-
-    public static void main(String[] args) {
-        SpringApplication.run(SpringBootApp.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println("started");
-    }
+second {
+  java {
+    srcDirs = ['src/hello']
+  }
 }
 ```
+
+* Create JBang script from template: `jbang init --template=cli src/second/Hello.java`
+* Open IntelliJ IDEA to edit your script
 
 # References
 
