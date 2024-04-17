@@ -3,12 +3,12 @@
 plugins {
   id 'java'
   id 'groovy'
-  id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+  id 'org.jetbrains.kotlin.jvm' version '1.9.23'
 }
 
 java {
-  sourceCompatibility = JavaVersion.VERSION_11
-  targetCompatibility = JavaVersion.VERSION_11
+  sourceCompatibility = JavaVersion.VERSION_17
+  targetCompatibility = JavaVersion.VERSION_17
 }
 
 repositories {
@@ -35,18 +35,18 @@ sourceSets {
 
 dependencies {
   // main source dependencies
-  implementation "io.github.cdimascio:dotenv-java:2.2.2"
-  implementation "org.slf4j:slf4j-simple:1.7.32"
-  implementation "org.projectlombok:lombok:1.18.22"
-  annotationProcessor "org.projectlombok:lombok:1.18.22"
+  implementation "io.github.cdimascio:dotenv-java:3.0.0"
+  implementation "org.slf4j:slf4j-simple:1.7.36"
+  implementation "org.projectlombok:lombok:1.18.32"
+  annotationProcessor "org.projectlombok:lombok:1.18.32"
   // hello source dependencies
-  helloImplementation "io.github.cdimascio:dotenv-java:2.2.2"
-  helloImplementation "org.slf4j:slf4j-simple:1.7.32"
-  helloImplementation "org.projectlombok:lombok:1.18.22"
-  helloAnnotationProcessor "org.projectlombok:lombok:1.18.22"
+  helloImplementation "io.github.cdimascio:dotenv-java:3.0.0"
+  helloImplementation "org.slf4j:slf4j-simple:1.7.36"
+  helloImplementation "org.projectlombok:lombok:1.18.32"
+  helloAnnotationProcessor "org.projectlombok:lombok:1.18.32"
   // gdemo source dependencies
   gdemoImplementation 'org.codehaus.groovy:groovy-all:3.0.9'
   // kdemo source dependencies
   kdemoImplementation platform('org.jetbrains.kotlin:kotlin-bom')
-  kdemoImplementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+  kdemoImplementation 'org.jetbrains.kotlin:kotlin-stdlib'
 }
